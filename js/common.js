@@ -15,6 +15,42 @@ return false;
 // одинаковой высоты разные по длине ашки
 $(".name class").equalHeights();
 
+
+// галера с прелодером
+$('#portfolio').magnificPopup({
+	mainClass: 'mfp-zoom-in',
+	delegate: 'a',
+	type: 'image',
+	tLoading: '',
+	gallery:{
+		enabled:true,
+	},
+	removalDelay: 300,
+	callbacks: {
+		beforeChange: function() {
+			this.items[0].src = this.items[0].src + '?=' + Math.random(); 
+		},
+		open: function() {
+			$.magnificPopup.instance.next = function() {
+				var self = this;
+				self.wrap.removeClass('mfp-image-loaded');
+				setTimeout(function() { $.magnificPopup.proto.next.call(self); }, 120);
+			}
+			$.magnificPopup.instance.prev = function() {
+				var self = this;
+				self.wrap.removeClass('mfp-image-loaded');
+				setTimeout(function() { $.magnificPopup.proto.prev.call(self); }, 120);
+			}
+		},
+		imageLoadComplete: function() { 
+			var self = this;
+			setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 20);
+		}
+	}
+});
+
+
+
 //Кнопка наверх с права от контента
 $("body").append('<div class="button-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
 // Заставляет кнопку работать как ссылку на самый вверх
@@ -46,15 +82,13 @@ $(".owl-carouselay12").owlCarousel({
      margin:130
     }
 },
-
-
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		navContainer: '#customNavay12', 
 	});
 
 
 
-	$(".top-menu ul li a").mPageScroll2id({
+	$(".top-menu ul li a, #linked").mPageScroll2id({
 		 layout:"auto",
 		 offset:".top-line",
 		scrollEasing: "linear",
@@ -63,12 +97,15 @@ $(".owl-carouselay12").owlCarousel({
 		 autoScrollSpeed: true,
 		scrollSpeed : 2000
 	});
+
+
 // всплывающие окна обратной связи позвонить мне
 $("a[href='#call-back']").magnificPopup ({
-	mainClass:'my-mfp-zoom-in',
-	removalDelay:300,
 	type:'inline',
-}); 
+	removalDelay:300,
+	mainClass:'mfp-fade'
+});
+
 
 /*чтобы в формах был индивидуальный заголовок */
 $("a[href='#call-back']").click(function(){

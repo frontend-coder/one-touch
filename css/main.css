@@ -384,7 +384,7 @@ body {
 }
 
 /* block portfolio */
-.block-fongrey .col-md-4 {
+.block-portfolio .col-md-4 {
   padding: 0;
 }
 
@@ -722,7 +722,7 @@ footer p {
 }
 
 .forms-call input:focus, .forms-call textarea:focus {
-  color: #f05d72;
+  color: #222833;
 }
 
 .forms-call .get-buttons {
@@ -810,8 +810,7 @@ footer p {
 }
 
 .forms-calldecor .success {
-  color: #fff;
-  background-color: #9ff;
+  background-color: #000;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -823,6 +822,8 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
+  padding-right: 20px;
+  padding-left: 20px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -834,13 +835,54 @@ footer p {
 }
 
 .forms-calldecor .success p {
-  margin: auto;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #000;
+  color: #fff;
+  font-size: 20px;
   margin: auto;
+  text-align: center;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  left: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  left: 0;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  left: 100%;
 }
 
 /*==========  Desktop First Method  ==========*/
