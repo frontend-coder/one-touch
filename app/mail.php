@@ -1,8 +1,8 @@
 <?php
 
 $recepient = "frontendercode@gmail.com";
-$sitename  = "Тестирование шаблона Yoga-studio";
-$subject   = "Заказ с сайта Тестирование шаблона Yoga-studio";
+$sitename  = "Тестирование шаблона onetouch";
+$subject   = "Заказ с сайта Тестирование шаблона onetouch";
 
 $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);
