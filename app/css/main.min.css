@@ -881,22 +881,25 @@ footer p {
     width: 1170px;
     margin: 0 auto; } }
 
+/* важное разрешение 1280 */
 @media only screen and (max-width: 1190px) {
   .toggle-mnu {
     margin-top: 39px;
     margin-right: 24px; } }
 
+/* важное разрешение 1080 */
 @media screen and (max-width: 1080px) {
   .title-header h1, .title-header h3 {
     width: 54%; } }
 
-/* первое разрешение под казачика */
+/* важное разрешение 1024 */
 @media only screen and (max-width: 1024px) {
   .title-header h1, .title-header h3 {
     width: 69%; }
   .service-block-icon .fa-4x {
     font-size: 3em; } }
 
+/* важное разрешение 800 */
 @media only screen and (max-width: 800px) {
   .block {
     padding: 60px 0; }
@@ -917,6 +920,7 @@ footer p {
   .forms-call input, .forms-call textarea {
     font-size: 1.10em; } }
 
+/* важное разрешение 768 */
 @media only screen and (max-width: 768px) {
   #carrousel .owl-nav .owl-next:before,
   #carrousel .owl-nav .owl-prev:before {
@@ -924,6 +928,7 @@ footer p {
   #carrousel .owl-nav .owl-prev, #carrousel .owl-nav .owl-next {
     top: -15px; } }
 
+/* важное разрешение 600 */
 @media only screen and (max-width: 600px) {
   .title-header h1, .title-header h3 {
     width: 100%; }
@@ -950,6 +955,7 @@ footer p {
   .owl-carousel .owl-item img {
     display: inline-block; } }
 
+/* важное разрешение 480 */
 @media only screen and (max-width: 480px) {
   .service-block-text, p.text-testimonial {
     font-size: 15px;

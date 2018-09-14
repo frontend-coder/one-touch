@@ -58,7 +58,6 @@ body input:required:valid,
 body textarea:required:valid {
 
 }
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -70,11 +69,9 @@ ul{
 	margin:0;
 	padding:0;
 }
-
 li{
 	list-style-type:none;
 }
-
 .img-responsive {
 	display: block;
 width: 100%;
@@ -83,9 +80,6 @@ width: 100%;
 .hidden {
 	display: none;
 }
-
-
-
 @import '_header.scss';
 @import '_allstyle.scss';
 @import '_media.scss';

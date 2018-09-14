@@ -1,227 +1,232 @@
 @import '_var.scss';
 @media (min-width: 737px) {
-  .container { width: 100%;  margin: 0 auto; }
+ .container { width: 100%;  margin: 0 auto; }
 }
 @media (min-width: 768px) {
-  .container {width: 750px; margin: 0 auto; }
+ .container {width: 750px; margin: 0 auto; }
 }
 @media (min-width: 800px) {
-  .container { width: 780px;  margin: 0 auto;}
+ .container { width: 780px;  margin: 0 auto;}
 }
 @media (min-width: 992px) {
-  .container { width: 970px; margin: 0 auto; }
+ .container { width: 970px; margin: 0 auto; }
 }
 @media (min-width: 1024px) {
-  .container { width: 1004px; margin: 0 auto; }
+ .container { width: 1004px; margin: 0 auto; }
 }
 @media screen and (min-width: 1080px) {
-  .container { width: 1060px;  margin: 0 auto; }
+ .container { width: 1060px;  margin: 0 auto; }
 }
 @media only screen and (min-width : 1190px) {
-  .container { width: 1170px;  margin: 0 auto;}
+ .container { width: 1170px;  margin: 0 auto;}
 }
 @media only screen and (min-width : 1200px) {
-  .container {width: 1170px;  margin: 0 auto;}
+ .container {width: 1170px;  margin: 0 auto;}
 }
 
 @media only screen and (max-width : 1440px) {
 }
-@media only screen and (max-width : 1200px) {
+/* важное разрешение 1280 */
+@media only screen and (max-width : 1280px) {
 
 }
 @media only screen and (max-width : 1190px) {
-.toggle-mnu {
-margin-top: 39px;
-margin-right: 24px;
+ .toggle-mnu {
+  margin-top: 39px;
+  margin-right: 24px;
+ }
 }
-}
+/* важное разрешение 1080 */
 @media screen and (max-width: 1080px) {
-.title-header h1, .title-header h3 {
-width: 54%;
+ .title-header h1, .title-header h3 {
+  width: 54%;
+ }
 }
-}
-/* первое разрешение под казачика */
+/* важное разрешение 1024 */
 @media only screen and (max-width: 1024px) {
-.title-header h1, .title-header h3 {
-width: 69%;}
-.service-block-icon .fa-4x {
-font-size: 3em;}
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 800px) {
-.block {
-padding: 60px 0;}
-.title-header h1 {
-font-size: 25px;
-}
-.title-header h3 {
-font-size: 20px;}
-.service-block-text {
-font-size: 16px;
-margin-bottom: 20px;
-}
-#carrousel .owl-nav .owl-next {
-right: 38%;
-}
-#carrousel .owl-nav .owl-prev {
-left: 37%;}
-.block .about-me-title {
-text-align: center;
-margin-bottom: 40px;}
-.forms-call input, .forms-call textarea {
-font-size: 1.10em;
-}
-}
+ .title-header h1, .title-header h3 {
+  width: 69%;}
+  .service-block-icon .fa-4x {
+   font-size: 3em;}
+  }
+  @media only screen and (max-width: 992px) {
+  }
+  /* важное разрешение 800 */
+  @media only screen and (max-width: 800px) {
+   .block {
+    padding: 60px 0;}
+    .title-header h1 {
+     font-size: 25px;
+    }
+    .title-header h3 {
+     font-size: 20px;}
+     .service-block-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+     }
+     #carrousel .owl-nav .owl-next {
+      right: 38%;
+     }
+     #carrousel .owl-nav .owl-prev {
+      left: 37%;}
+      .block .about-me-title {
+       text-align: center;
+       margin-bottom: 40px;}
+       .forms-call input, .forms-call textarea {
+        font-size: 1.10em;
+       }
+      }
+      /* важное разрешение 768 */
+      @media only screen and (max-width: 768px) {
+       #carrousel .owl-nav .owl-next:before,
+       #carrousel .owl-nav .owl-prev:before  {
+        font-size: 2.50rem;
+       }
+       #carrousel .owl-nav .owl-prev, #carrousel .owl-nav .owl-next {
+        top: -15px;
+       }
+      }
 
-@media only screen and (max-width: 768px) {
-#carrousel .owl-nav .owl-next:before,
-#carrousel .owl-nav .owl-prev:before  {
-font-size: 2.50rem;
-}
-#carrousel .owl-nav .owl-prev, #carrousel .owl-nav .owl-next {
-top: -15px;
-}
-}
+      @media only screen and (max-width: 740px) {
 
-@media only screen and (max-width: 740px) {
+      }
 
-}
+      @media only screen and (max-width: 736px) {
+      }
 
-@media only screen and (max-width: 736px) {
-}
+      @media only screen and (max-width: 734px) {
+      }
 
-@media only screen and (max-width: 734px) {
-}
+      @media only screen and (max-width: 684px) {
+      }
 
-@media only screen and (max-width: 684px) {
-}
+      @media only screen and (max-width: 667px) {
 
-@media only screen and (max-width: 667px) {
+      }
 
-}
+      @media only screen and (max-width: 640px) {
+      }
 
-@media only screen and (max-width: 640px) {
-}
+      /* важное разрешение 600 */
+      @media only screen and (max-width: 600px) {
+       .title-header h1, .title-header h3 {width: 100%;}
+       .title-header {padding: 45% 0;}
+       .first_label { padding-right: 0; }
+       .second_label {padding-left: 0;}
+       .inner-test-cont { margin-left: 200px;}
+       #carrousel .owl-nav .owl-next {
+        right: 39%;}
+       }
 
-@media only screen and (max-width: 600px) {
-.title-header h1, .title-header h3 {width: 100%;}
-.title-header {padding: 45% 0;}
-.first_label { padding-right: 0; }
-.second_label {padding-left: 0;}
-.inner-test-cont { margin-left: 200px;}
-#carrousel .owl-nav .owl-next {
-right: 39%;}
-}
+       @media only screen and (max-width: 568px) {
+        #carrousel .owl-nav .owl-next {
+         right: 36%;}
+         #carrousel .owl-nav .owl-prev {
+          left: 34%;}
+          .inner-test img {
+           float: none;}
+           .inner-test-cont {
+            margin-left: 10px;}
+            .owl-carousel .owl-item img {
+             display: inline-block;
+            }
+           }
 
-@media only screen and (max-width: 568px) {
-#carrousel .owl-nav .owl-next {
-right: 36%;}
-#carrousel .owl-nav .owl-prev {
-left: 34%;}
-.inner-test img {
-float: none;}
-.inner-test-cont {
-margin-left: 10px;}
-.owl-carousel .owl-item img {
-display: inline-block;
-}
-}
+           /* важное разрешение 480 */
+           @media only screen and (max-width: 480px) {
+            .service-block-text, p.text-testimonial {
+             font-size: 15px;  line-height: 25px;
+            }
+            .about-me-text {
+             font-size: 15px;
+             line-height: 25px;}
+             .hidden-mnu { top: -9px;
+             }
+             .title-header h1 {
+              font-size: 22px;
+             }
+             .title-header h3 {
+              font-size: 17px;
+             }
+             .about-me-title {
+              font-size: 26px;}
+              .service-block-icon .fa-4x {
+               font-size: 2.5em;}
+               .top-line {height: 74px;}
+               .logo { margin-top: 24px;}
+               .toggle-mnu {margin-top: 24px;}
+               footer p { font-size: 11px;
+               }
+              }
 
-@media only screen and (max-width: 480px) {
-.service-block-text, p.text-testimonial {
-font-size: 15px;  line-height: 25px;
-}
-.about-me-text {
-font-size: 15px;
-line-height: 25px;}
-.hidden-mnu { top: -9px;
-}
-.title-header h1 {
-font-size: 22px;
-}
-.title-header h3 {
-font-size: 17px;
-}
-.about-me-title {
-font-size: 26px;}
-.service-block-icon .fa-4x {
-font-size: 2.5em;}
-.top-line {height: 74px;}
-.logo { margin-top: 24px;}
-.toggle-mnu {margin-top: 24px;}
-footer p { font-size: 11px;
-}
-}
-
-@media only screen and (max-width: 425px) {
-
-
-
-}
-
-@media only screen and (max-width: 414px) {
+              @media only screen and (max-width: 425px) {
 
 
 
-}
+              }
 
-@media only screen and (max-width: 412px) {
-
-
-
-}
-
-@media only screen and (max-width: 384px) {
+              @media only screen and (max-width: 414px) {
 
 
 
-}
+              }
 
-@media only screen and (max-width: 375px) {
-
-
-
-}
-
-@media only screen and (max-width: 360px) {
+              @media only screen and (max-width: 412px) {
 
 
 
-}
+              }
 
-@media only screen and (max-width: 320px) {
-.title-header h1 { font-size: 13px;
-line-height: 1.5;
-}
-.title-header h3 {font-size: 13px;
-line-height: 1.5;
-}
-.calling-me a {
-    display: inline-block;
-    color: #DC143C;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-}
-.hidden-mnu { top: -8px; }
-.about-me-text, .service-block-text, p.text-testimonial {
-    font-size: 15px;
-    line-height: 20px;
-}
-#carrousel .owl-nav .owl-prev {
-left: 26%;
-}
-#carrousel .owl-nav .owl-next {
-    right: 28%;}
-.owl-theme .owl-dots .owl-dot span,
-.owl-theme .owl-dots .owl-dot.active span {
-    width: 8px;
-    height: 8px;}
-#carrousel .owl-nav .owl-next:before, #carrousel .owl-nav .owl-prev:before {
-    font-size: 2.00rem;}
-#carrousel .owl-nav .owl-prev, #carrousel .owl-nav .owl-next {
-    top: -13px;
-}
-.service-block-icon .fa-4x {
-    font-size: 2.0em;}
-}
+              @media only screen and (max-width: 384px) {
+
+
+
+              }
+
+              @media only screen and (max-width: 375px) {
+
+
+
+              }
+
+              @media only screen and (max-width: 360px) {
+
+
+
+              }
+
+              @media only screen and (max-width: 320px) {
+               .title-header h1 { font-size: 13px;
+                line-height: 1.5;
+               }
+               .title-header h3 {font-size: 13px;
+                line-height: 1.5;
+               }
+               .calling-me a {
+                display: inline-block;
+                color: #DC143C;
+                padding: 10px 20px;
+                font-size: 1.2rem;
+               }
+               .hidden-mnu { top: -8px; }
+               .about-me-text, .service-block-text, p.text-testimonial {
+                font-size: 15px;
+                line-height: 20px;
+               }
+               #carrousel .owl-nav .owl-prev {
+                left: 26%;
+               }
+               #carrousel .owl-nav .owl-next {
+                right: 28%;}
+                .owl-theme .owl-dots .owl-dot span,
+                .owl-theme .owl-dots .owl-dot.active span {
+                 width: 8px;
+                 height: 8px;}
+                 #carrousel .owl-nav .owl-next:before, #carrousel .owl-nav .owl-prev:before {
+                  font-size: 2.00rem;}
+                  #carrousel .owl-nav .owl-prev, #carrousel .owl-nav .owl-next {
+                   top: -13px;
+                  }
+                  .service-block-icon .fa-4x {
+                   font-size: 2.0em;}
+                  }
