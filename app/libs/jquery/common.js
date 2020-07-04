@@ -1,7 +1,5 @@
 $(document).ready(function() {
-	$("body").niceScroll({
-horizrailenabled:false
-});
+
 // вверхнее красиво-вращающееся меню
 // 1 и 2 строка это анимация крестика
 //3 строка - слайдер вниз меню
@@ -15,23 +13,29 @@ $('body, .top-menu ul li a').click(function () {
 $('.hidden-mnu').hide("slow");
 });
 
-// pagination on lending pages
-$(".top-menu ul li a, #linked").mPageScroll2id({
-layout                 : "auto",
-offset                 : ".top-line",
-scrollEasing           : "linear",
-highlightByNextTarget  : true,
-keepHighlightUntilNext : true,
-autoScrollSpeed        : true,
-scrollSpeed            : 1000
-});
+    /* Page Scroll to id fn call */
+    $(".top-menu ul li a, #linked").mPageScroll2id({
+			layout: "auto",
+			offset: ".top_line",
+    	autoScrollSpeed: true,
+			scrollSpeed: 1000,
+			scrollEasing: "linear",
+			highlightByNextTarget: true,
+			keepHighlightUntilNext: true,
+			highlightSelector: ".top-menu ul li a"
+    });
 
+    /* demo functions */
+    $("a[rel='next']").click(function (e) {
+    	e.preventDefault();
+    	var to = $(this).parent().parent("section").next().attr("id");
+    	$.mPageScroll2id("scrollTo", to);
+    });
+	
 $(function() {
 	$("#phone_key").mask("+7(000)000-00-00", {placeholder: "+7(___)___-__-__",clearIfNotMatch: true});
 	$("#phone_header").mask("+7(000)000-00-00", {placeholder: "+7(___)___-__-__",clearIfNotMatch: true});
 });
-
-
 
 // код подключения плагина Vertical-Horizontal-Tabs
   // $('#verticalTab').jqTabs();
@@ -127,6 +131,28 @@ if ($(this).scrollTop() > $(this).height()) {
 }
 });
 
+
+	AOS.init({
+		// Global settings:
+		disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+	//	startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+//		initClassName: 'aos-init', // class applied after initialization
+//		animatedClassName: 'aos-animate', // class applied on animation
+//		useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+//		disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+//		debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+//		throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+//		offset: 100, // offset (in px) from the original trigger point
+//		delay: 1000, // values from 0 to 3000, with step 50ms
+//		duration: 800, // values from 0 to 3000, with step 50ms
+//		easing: 'ease', // default easing for AOS animations
+//		once: false, // whether animation should happen only once - while scrolling down
+//		mirror: false, // whether elements should animate out while scrolling past them
+		anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+	});
 //Ajax push mesege http://api.jquery.com/jquery.ajax/
 
 $("form").submit(function() { //Change

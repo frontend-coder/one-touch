@@ -3,8 +3,9 @@
 .block {
 	padding: 120px 0;
 }
+
 .block-fongrey {
-	background-color:$fon-gray;
+	background-color: $fon-gray;
 }
 
 /* блок about me  */
@@ -13,27 +14,34 @@
 	width: 287px;
 	min-height: 371px;
 	// background-image: url("../images/man.png");
-	background: url('../images/man.png') top center no-repeat;
+	background: url('../images/man.webp') top center no-repeat;
 	background-size: cover;
 }
+
 .about-me-block {
 	margin: 20px 0;
 }
+
 .about-me-title {
 	font-family: "OpenSansSemiBold", sans-serif;
 	font-size: 30px;
 	line-height: 33px;
 	text-transform: uppercase;
 	position: relative;
+	font-weight: normal;
+
+
 }
-.about-me-title:before{
+
+.about-me-title:before {
 	content: "";
 	position: absolute;
 	bottom: -10px;
-	width:5em;
+	width: 5em;
 	border: 1px solid $red-color;
 
 }
+
 .about-me-text {
 	margin-top: 25px;
 	font-size: 16px;
@@ -41,23 +49,27 @@
 	letter-spacing: 1px;
 
 }
+
 .block .about-me-title {
 	text-align: center;
 	margin-bottom: 70px;
 }
-.block .about-me-title:before{
-	left:50%;
+
+.block .about-me-title:before {
+	left: 50%;
 	margin-left: -3em;
-	width:6em;
+	width: 6em;
 }
 
 /* services block style  */
 .service-block {
 	text-align: center;
 }
+
 .service-block-icon {
-	color:#dc143c;
+	color: #dc143c;
 }
+
 .service-block-title {
 	font-family: "OpenSansSemiBold", sans-serif;
 	font-size: 18px;
@@ -65,10 +77,13 @@
 	text-transform: uppercase;
 	margin: 30px 0 20px;
 }
+
 .service-block-text {
 	font-size: 14px;
 	line-height: 30px;
 	letter-spacing: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* block portfolio */
@@ -76,27 +91,31 @@
 	padding: 0;
 
 }
+
 .effect-boom {
 	position: relative;
 }
+
 .effect-boom img {
 	width: 100%;
 	height: auto;
 }
+
 .effect-boom-blok {
 
 	overflow: hidden;
 }
+
 .effect-boom-blok .caption {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: rgba(0,5,40,0.8);
+	background: rgba(0, 5, 40, 0.8);
 	width: 100%;
 	height: 100%;
 	color: #fff;
 	opacity: 0;
-	transform: rotate(30deg) translate(30px,-89px);
+	transform: rotate(30deg) translate(30px, -89px);
 	transition: transform 0.55s cubic-bezier(0.49, -0.19, 0.7, -0.01) 0.1s, opacity 0.1s linear 0s;
 }
 
@@ -109,17 +128,20 @@
 	padding-bottom: 20px;
 	margin-top: 80px;
 }
+
 .effect-boom-blok .caption p {
 	margin: 15px 0px 35px;
 	text-align: center;
 	font-style: italic;
 	padding: 0px 10px;
 }
+
 .effect-boom-blok .caption ul {
-	border:1px solid #fff;
+	border: 1px solid #fff;
 	padding: 4px 0;
 	text-align: center;
 }
+
 .effect-boom-blok .caption ul li {
 	display: inline-block;
 	list-style-type: none;
@@ -128,8 +150,8 @@
 .effect-boom-blok .caption ul li a.btn {
 	display: inline-block;
 	text-align: center;
-	background:rgb(0,0,0);
-	border:2px solid rgba(darken(#eee, 80%), 0.7);
+	background: rgb(0, 0, 0);
+	border: 2px solid rgba(darken(#eee, 80%), 0.7);
 	color: #fff;
 	width: 60px;
 	font-size: 14px;
@@ -138,6 +160,7 @@
 	border-radius: 50%;
 	margin: 0px auto 0px auto;
 }
+
 .effect-boom-blok img {
 	display: block;
 	width: 100%;
@@ -145,12 +168,14 @@
 	transition: all 0.25s linear 0.3s;
 	transform: scale(1);
 }
+
 .effect-boom-blok:hover img {
 	transform: scale(1.3);
 	transition-delay: 0s;
 }
+
 .effect-boom-blok:hover .caption {
-	transform: rotate(0deg) translate(0px,0px);
+	transform: rotate(0deg) translate(0px, 0px);
 	opacity: 1;
 	transition-delay: 0.3s;
 }
@@ -168,9 +193,11 @@
 	background-color: transparent;
 	color: transparent;
 }
+
 #carrousel .owl-nav .owl-prev {
 	left: 41%;
 }
+
 #carrousel .owl-nav .owl-next {
 	right: 42%;
 }
@@ -184,7 +211,7 @@
 	font-weight: normal;
 	font-size: 3.0rem;
 	line-height: 1;
-	color:#aeaeae;
+	color: #aeaeae;
 }
 
 #carrousel .owl-nav .owl-next:before {
@@ -199,37 +226,41 @@
 	color: #aeaeae;
 
 }
+
 #carrousel .owl-nav .owl-prev:hover:before,
 #carrousel .owl-nav .owl-next:hover:before {
 	color: darken($red-color, 10%);
 }
+
 /* Отзывы  */
 .inner-test {
 	text-align: center;
 	background-color: #fff;
 }
 
-.inner-test img{
+.inner-test img {
 	max-width: 128px;
-	margin:0 auto 15px;
+	margin: 0 auto 15px;
 }
+
 h3.city-name {
-	padding:10px 0;
+	padding: 10px 0;
 	font-size: 14px;
 	font-size: .8em;
 	font-weight: 900;
 	line-height: 20px;
-	color:$red-color;
+	color: $red-color;
 	text-align: left;
 	margin-left: 30px;
 }
 
 p.text-testimonial {
-	padding:10px 0 5px;
+	padding: 10px 0 5px;
 	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 35px;
 }
+
 .block-items {
 	cursor: default;
 }
@@ -243,24 +274,26 @@ p.text-testimonial {
 
 /*Изменяем внешний вид элементов управления (точки) */
 .owl-controls {
-	margin-top:25px;
+	margin-top: 25px;
 }
+
 .owl-theme .owl-dots .owl-dot span {
 	width: 12px;
 	height: 12px;
 	background-color: darken(#eee, 25%);
 }
 
-.owl-theme .owl-dots .owl-dot.active span{
+.owl-theme .owl-dots .owl-dot.active span {
 	width: 12px;
 	height: 12px;
 }
 
-.owl-carousel .owl-dots .owl-dot.active span
-{background-color: darken($red-color, 10%);
+.owl-carousel .owl-dots .owl-dot.active span {
+	background-color: darken($red-color, 10%);
 }
-.owl-carousel .owl-dots .owl-dot:hover span
-{background-color: darken($red-color, 20%);
+
+.owl-carousel .owl-dots .owl-dot:hover span {
+	background-color: darken($red-color, 20%);
 }
 
 /* картинки в качестве фона слайдера */
@@ -270,7 +303,7 @@ p.text-testimonial {
 	border-left: 3px solid $red-color;
 }
 
-.inner-test img{
+.inner-test img {
 	max-width: 160px;
 	max-height: 160px;
 	float: left;
@@ -278,18 +311,21 @@ p.text-testimonial {
 	margin: 10px 5px 30px 20px;
 
 }
+
 .inner-test-cont {
 	margin-left: 220px;
 
 }
-p.text-testimonial{
+
+p.text-testimonial {
 	text-align: left;
-	color:darken(#eee, 55%);
+	color: darken(#eee, 55%);
 
 	line-height: 2;
 
 }
-.text-testimonial i{
+
+.text-testimonial i {
 	margin-right: 5px;
 	color: $red-color;
 }
@@ -310,19 +346,22 @@ p.text-testimonial{
 	z-index: 3;
 	transition: all 0.5s ease;
 }
+
 .button-top .fa {
 	color: #fff;
 	font-size: 1.2rem;
 }
+
 .button-top:hover {
 	opacity: 1;
 }
+
 .button-top.active {
 	right: 30px;
 }
 
 footer {
-	padding:20px 0;
+	padding: 20px 0;
 	background-color: #333;
 	color: #eee;
 }
@@ -337,77 +376,85 @@ footer p {
 /* стили формы обратной связи */
 
 .forms-call {
-	font-size:.875em;
+	font-size: .875em;
 }
 
 .forma-header p {
 	font-size: 0.938em;
-	color:#666;
+	color: #666;
 	margin-top: 22px;
 	text-align: left;
 }
 
-.forms-call label{
-	margin:10px 0;
-	display:block;
+.forms-call label {
+	margin: 10px 0;
+	display: block;
 }
 
-.forms-call input, .forms-call textarea{
-	display:block;
-	width:100%;
-	height:60px;
+.forms-call input,
+.forms-call textarea {
+	display: block;
+	width: 100%;
+	height: 60px;
 	line-height: 60px;
-	font-size:0.938em;
-	border:none;
+	font-size: 0.938em;
+	border: none;
 	border-bottom: 1px solid red;
-	text-indent:10px;
-	margin:10px auto;
+	text-indent: 10px;
+	margin: 10px auto;
 	@include trans;
-	color:#364052;
+	color: #364052;
 }
+
 .second_label {
 	padding-left: 10%;
 }
+
 .first_label {
 	padding-right: 10%;
 }
+
 .forms-call textarea {
-	height:150px;
+	height: 150px;
 	width: 100%;
 	resize: none;
-	overflow:hidden;
+	overflow: hidden;
 }
 
-.forms-call input:focus, .forms-call textarea:focus{
-	color:darken(#364052, 10%);
+.forms-call input:focus,
+.forms-call textarea:focus {
+	color: darken(#364052, 10%);
 }
+
 .forms-calldecor input {
 	height: 40px;
 	line-height: 40px;
 }
+
 .forms-calldecor textarea {
 	height: 100px;
 }
+
 .forms-calldecor .button-call .get-buttons {
 	margin-top: 10px;
 	line-height: 1;
 }
 
 .forms-call .get-buttons {
-	margin-top:50px;
+	margin-top: 50px;
 	padding: 10px 50px;
-/* 	line-height: 50px; */
-	font-size:18px;
-	border:1px solid $red-color;
-	text-decoration:none;
-	background-color:$red-color;
+	/* 	line-height: 50px; */
+	font-size: 18px;
+	border: 1px solid $red-color;
+	text-decoration: none;
+	background-color: $red-color;
 	border-radius: 3px;
 	@include trans;
-	color:#fff;
+	color: #fff;
 }
 
-.button-call{
-	text-align:center;
+.button-call {
+	text-align: center;
 	margin: 0;
 	float: left;
 }
@@ -415,17 +462,18 @@ footer p {
 .forms-call .get-buttons:focus,
 .forms-call .get-buttons:hover,
 .forms-call .get-buttons:active {
-	background-color:transparent;
-	border:1px solid $red-color;
-	color:$red-color;
+	background-color: transparent;
+	border: 1px solid $red-color;
+	color: $red-color;
 }
+
 /* конец формы обратной связи */
 
 /*оформление всплывающей формы а ниже и благодарности */
 .forms-calldecor {
 	max-width: 480px;
 	position: relative;
-	background-color:rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	transition: all 0.5s else;
 	overflow: hidden;
 	margin: auto;
@@ -433,7 +481,8 @@ footer p {
 	border-radius: 1em;
 }
 
-.forms-calldecor h4, .forms-calldecor h5 {
+.forms-calldecor h4,
+.forms-calldecor h5 {
 	color: #fff;
 	text-align: center;
 	font-size: 1.3em;
@@ -447,9 +496,10 @@ footer p {
 	letter-spacing: 1px;
 }
 
-.forms-calldecor input, .forms-calldecor textarea {
+.forms-calldecor input,
+.forms-calldecor textarea {
 	width: 90%;
-	color:lighten(#fff, 10%);
+	color: lighten(#fff, 10%);
 }
 
 .forms-calldecor .button-call {
@@ -472,9 +522,11 @@ footer p {
 	font-weight: bold;
 	border-radius: 3px;
 }
+
 .mfp-close-btn-in .mfp-close {
 	color: #ffffff;
 }
+
 .forms-calldecor .success {
 	background-color: #000;
 	position: absolute;
@@ -483,24 +535,24 @@ footer p {
 	top: -100%;
 	width: 100%;
 	height: 100%;
-	display:flex;
+	display: flex;
 	opacity: 0;
 	padding-right: 20px;
 	padding-left: 20px;
 	transition: all 0.5s ease;
 }
 
-.forms-calldecor .success.active{
+.forms-calldecor .success.active {
 	top: 0;
 	opacity: 1;
 }
 
 .forms-calldecor .success p {
 	text-transform: uppercase;
-	display:flex;
+	display: flex;
 	color: #fff;
 	font-size: 20px;
-	margin:auto;
+	margin: auto;
 	text-align: center;
 }
 
@@ -512,10 +564,12 @@ footer p {
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
+
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
 	opacity: 0.8;
 }
+
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
@@ -524,18 +578,20 @@ footer p {
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
-	left:100%;
+	left: 100%;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
+
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
 	opacity: 1;
-	left:0;
+	left: 0;
 }
+
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
-	left:100%;
+	left: 100%;
 }
