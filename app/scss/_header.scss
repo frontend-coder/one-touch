@@ -1,242 +1,242 @@
-/**стили оформления хедера сайта */
+/** стили оформления хедера сайта */
 
 .header_img {
-	background: #000 url('../images/header-pic.jpg') top center no-repeat;
-	min-height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
-	position: relative;
+  position: relative;
+  min-height: 100vh;
+  background: #000000 url("../images/header-pic.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.header_img:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(#000, 0.60);
+.header_img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000000, 0.6);
 }
 
 .top-line {
-	width: 100%;
-	z-index: 200;
-	position: fixed;
-	height: 100px;
-	background-color: rgba(#000, 0.60);
-	text-align: center;
+  // position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  height: 62px;
+  text-align: center;
+  background-color: rgba(#000000, 0.6);
+}
+
+.col__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  // height: 70px;
+}
+
+.col-right {
+  margin-left: auto;
 }
 
 .logo {
-	font-family: "OpenSansSemiBold", sans-serif;
-	font-size: 23px;
-	line-height: 26px;
-	letter-spacing: 1px;
-	margin-top: 37px;
-	color: #fff;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 23px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
 .logo span {
-	color: $red-color;
+  color: $red-color;
 }
 
 .top-menu {
-	font-family: "OpenSansBold", sans-serif;
-	text-align: right;
-	margin: 33px 0;
+  font-family: "OpenSansBold", sans-serif;
+  text-align: right;
 }
 
 .top-menu ul {
-	padding: 0;
-	list-style-type: none;
-	font-size: 0;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0;
 }
 
 .top-menu ul li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .top-menu ul li a {
-	text-align: center;
-	font-size: 14px;
-	line-height: 20px;
-	display: block;
-	padding: 10px 20px;
-	cursor: pointer;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #fff;
-	@include trans;
+  @include trans;
+
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .top-menu ul li a.mPS2id-highlight,
 .top-menu ul li a:hover {
-	color: darken(#fff, 20%);
+  color: darken(#ffffff, 20%);
 }
 
-/*конец оформления кнопки  меню*/
+/* конец оформления кнопки  меню */
 
-/*оформление 2 меню для адаптива*/
+/* оформление 2 меню для адаптива */
 .hidden-mnu {
-	display: block;
-	top: 3px;
-	border-top: 1px solid #fff;
-	min-width: 100%;
-	position: absolute;
-	background-color: rgba(#000, 0.80);
-	left: 0;
-	right: 0;
-	z-index: 1;
-	display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3px;
+  z-index: 1;
+  display: none;
+  border-top: 1px solid #ffffff;
+  min-width: 100%;
+  background-color: rgba(#000000, 0.8);
 }
 
 .hidden-mnu ul li {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .hidden-mnu ul li a {
-	display: block;
-	background-color: rgba(0, 0, 0, 0.50);
-	text-align: center;
-	line-height: 1.5;
-	font-size: 1rem;
-	padding: 30px 0;
-	color: #DC143C;
+  display: block;
+  padding: 30px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #dc143c;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hidden-mnu ul li a:hover {
-	background-color: rgba(0, 0, 0, 0.50);
-	color: #fff;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*начало оформления кнопки  меню для адаптива*/
+/* начало оформления кнопки  меню для адаптива */
 .toggle-mnu {
-	float: right;
-	color: #000;
-	position: absolute;
-	right: 10px;
-	top: 0;
-	text-align: center;
-	line-height: 48px;
+  display: none;
+  width: 28px;
+  height: 28px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
 }
 
-.toggle-mnu {
-	display: block;
-	width: 28px;
-	height: 28px;
-	margin-top: 20px;
-	margin-right: 15px;
+.toggle-mnu span::after,
+.toggle-mnu span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
 }
 
-.toggle-mnu span:after,
-.toggle-mnu span:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 9px;
-}
-
-.toggle-mnu span:after {
-	top: 18px;
+.toggle-mnu span::after {
+  top: 18px;
 }
 
 .toggle-mnu span {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 }
 
 .toggle-mnu span,
-.toggle-mnu span:after,
-.toggle-mnu span:before {
-	width: 100%;
-	height: 2px;
-	background-color: #fff;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
+.toggle-mnu span::after,
+.toggle-mnu span::before {
+  border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  backface-visibility: hidden;
+  transition: all 0.3s;
 }
 
 .toggle-mnu.on span {
-	background-color: transparent;
+  background-color: transparent;
 }
 
-.toggle-mnu.on span:before {
-	-webkit-transform: rotate(45deg) translate(-1px, 0);
-	-ms-transform: rotate(45deg) translate(-1px, 0);
-	transform: rotate(45deg) translate(-1px, 0);
+.toggle-mnu.on span::before {
+  transform: rotate(45deg) translate(-1px, 0);
 }
 
-.toggle-mnu.on span:after {
-	-webkit-transform: rotate(-45deg) translate(6px, -7px);
-	-ms-transform: rotate(-45deg) translate(6px, -7px);
-	transform: rotate(-45deg) translate(6px, -7px);
+.toggle-mnu.on span::after {
+  transform: rotate(-45deg) translate(6px, -7px);
 }
 
-.toggle-mnu.on+#menu {
-	opacity: 1;
-	visibility: visible;
+.toggle-mnu.on +#menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* оформление содержимого над самой нартикой ниже top line */
 .title-header {
-	padding: 30% 0;
-	color: #fff;
+  position: relative;
+  padding: 30% 0;
+  color: #ffffff;
 }
 
 .title-header h1,
 .title-header h3 {
-	text-align: left;
-	letter-spacing: 1px;
-	width: 51%;
+  width: 51%;
+  letter-spacing: 1px;
+  text-align: left;
 }
 
 .title-header h1 {
-	font-family: "OpenSansBold", sans-serif;
-	font-size: 28px;
-	line-height: 37px;
-	text-transform: uppercase;
-	margin-bottom: 60px;
+  margin-bottom: 60px;
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 28px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
 
-.title-header h3 {
-	font-family: "OpenSansLight", sans-serif;
-	font-size: 22px;
-	line-height: 31px;
-	text-transform: uppercase;
+.title-header .title__descr {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
 }
 
 .calling-me {
-	text-align: left;
-	margin-top: 60px;
+  margin-top: 60px;
+  text-align: left;
 }
 
 .calling-me ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .calling-me ul li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .calling-me a {
-	display: inline-block;
-	color: $red-color;
-	padding: 10px 50px;
-	font-size: 1.4em;
-	letter-spacing: 2px;
-	@include trans;
-	border-radius: 10px;
-	text-decoration: none;
-	border: 1px solid $red-color;
+  @include trans;
+
+  display: inline-block;
+  border: 1px solid $red-color;
+  border-radius: 10px;
+  padding: 10px 50px;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: $red-color;
 }
 
 .calling-me a:hover {
-	color: darken($red-color, 10%);
-	border: 1px solid darken($red-color, 10%);
+  border: 1px solid darken($red-color, 10%);
+  color: darken($red-color, 10%);
 }

@@ -1,597 +1,666 @@
 /* all styles  */
 
 .block {
-	padding: 120px 0;
+  padding: 120px 0;
 }
 
 .block-fongrey {
-	background-color: $fon-gray;
+  background-color: $fon-gray;
+}
+
+.man__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-man-4 {
+  width: 33.33%;
+}
+
+.col-man-8 {
+  width: 66.67%;
 }
 
 /* блок about me  */
 .block-man {
-	margin: 0 auto;
-	width: 287px;
-	min-height: 371px;
-	// background-image: url("../images/man.png");
-	background: url('../images/man.webp') top center no-repeat;
-	background-size: cover;
+  margin: 0 auto;
+  width: 287px;
+  min-height: 371px;
+
+  // background-image: url("../images/man.png");
+  background: url("../images/man.webp") top center no-repeat;
+  background-size: cover;
 }
 
 .about-me-block {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 .about-me-title {
-	font-family: "OpenSansSemiBold", sans-serif;
-	font-size: 30px;
-	line-height: 33px;
-	text-transform: uppercase;
-	position: relative;
-	font-weight: normal;
-
-
+  position: relative;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  text-transform: uppercase;
 }
 
-.about-me-title:before {
-	content: "";
-	position: absolute;
-	bottom: -10px;
-	width: 5em;
-	border: 1px solid $red-color;
-
+.about-me-title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border: 1px solid $red-color;
+  width: 5em;
 }
 
 .about-me-text {
-	margin-top: 25px;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 1px;
-
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .block .about-me-title {
-	text-align: center;
-	margin-bottom: 70px;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
-.block .about-me-title:before {
-	left: 50%;
-	margin-left: -3em;
-	width: 6em;
+.block .about-me-title::before {
+  left: 50%;
+  margin-left: -3em;
+  width: 6em;
 }
 
 /* services block style  */
+.services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__items {
+  width: 31%;
+}
+
 .service-block {
-	text-align: center;
+  text-align: center;
 }
 
 .service-block-icon {
-	color: #dc143c;
+  color: #dc143c;
 }
 
 .service-block-title {
-	font-family: "OpenSansSemiBold", sans-serif;
-	font-size: 18px;
-	line-height: 19px;
-	text-transform: uppercase;
-	margin: 30px 0 20px;
+  margin: 30px 0 20px;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .service-block-text {
-	font-size: 14px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 /* block portfolio */
-.block-portfolio .col-md-4 {
-	padding: 0;
+.portfolio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
+.portfolio__items {
+  width: 33.3%;
+}
+
+.block-portfolio .col-md-4 {
+  padding: 0;
 }
 
 .effect-boom {
-	position: relative;
+  position: relative;
 }
 
 .effect-boom img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .effect-boom-blok {
-
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .effect-boom-blok .caption {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background: rgba(0, 5, 40, 0.8);
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	opacity: 0;
-	transform: rotate(30deg) translate(30px, -89px);
-	transition: transform 0.55s cubic-bezier(0.49, -0.19, 0.7, -0.01) 0.1s, opacity 0.1s linear 0s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: rgba(0, 5, 40, 0.8);
+  opacity: 0;
+  transform: rotate(30deg) translate(30px, -89px);
+  transition: transform 0.55s cubic-bezier(0.49, -0.19, 0.7, -0.01) 0.1s, opacity 0.1s linear 0s;
 }
 
 .effect-boom-blok .caption h4 {
-	font-size: 21px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-
-	padding-bottom: 20px;
-	margin-top: 80px;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .effect-boom-blok .caption p {
-	margin: 15px 0px 35px;
-	text-align: center;
-	font-style: italic;
-	padding: 0px 10px;
+  margin: 15px 0 35px;
+  padding: 0 10px;
+  font-style: italic;
+  text-align: center;
 }
 
 .effect-boom-blok .caption ul {
-	border: 1px solid #fff;
-	padding: 4px 0;
-	text-align: center;
+  border: 1px solid #ffffff;
+  padding: 4px 0;
+  text-align: center;
 }
 
 .effect-boom-blok .caption ul li {
-	display: inline-block;
-	list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
 }
 
 .effect-boom-blok .caption ul li a.btn {
-	display: inline-block;
-	text-align: center;
-	background: rgb(0, 0, 0);
-	border: 2px solid rgba(darken(#eee, 80%), 0.7);
-	color: #fff;
-	width: 60px;
-	font-size: 14px;
-	height: 60px;
-	line-height: 60px;
-	border-radius: 50%;
-	margin: 0px auto 0px auto;
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid rgba(darken(#eeeeee, 80%), 0.7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  background: rgb(0, 0, 0);
 }
 
 .effect-boom-blok img {
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: all 0.25s linear 0.3s;
-	transform: scale(1);
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: all 0.25s linear 0.3s;
 }
 
 .effect-boom-blok:hover img {
-	transform: scale(1.3);
-	transition-delay: 0s;
+  transform: scale(1.3);
+  transition-delay: 0s;
 }
 
 .effect-boom-blok:hover .caption {
-	transform: rotate(0deg) translate(0px, 0px);
-	opacity: 1;
-	transition-delay: 0.3s;
+  opacity: 1;
+  transform: rotate(0deg) translate(0, 0);
+  transition-delay: 0.3s;
 }
 
 /*  оформление слайдера отзывов */
 
 #carrousel .owl-theme .owl-nav {
-	position: relative;
+  position: relative;
 }
 
 #carrousel .owl-nav .owl-prev,
 #carrousel .owl-nav .owl-next {
-	position: absolute;
-	top: -19px;
-	background-color: transparent;
-	color: transparent;
+  position: absolute;
+  top: -19px;
+  color: transparent;
+  background-color: transparent;
 }
 
 #carrousel .owl-nav .owl-prev {
-	left: 41%;
+  left: 41%;
 }
 
 #carrousel .owl-nav .owl-next {
-	right: 42%;
+  right: 42%;
 }
 
-#carrousel .owl-nav .owl-prev:before {
-	position: absolute;
-	content: "\f104";
-	font-family: "FontAwesome";
-	top: 0;
-	left: 0;
-	font-weight: normal;
-	font-size: 3.0rem;
-	line-height: 1;
-	color: #aeaeae;
+#carrousel .owl-nav .owl-prev::before {
+  content: "\f104";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "FontAwesome";
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1;
+  color: #aeaeae;
 }
 
-#carrousel .owl-nav .owl-next:before {
-	position: absolute;
-	content: "\f105";
-	font-family: "FontAwesome";
-	top: 0;
-	left: 0;
-	font-weight: normal;
-	font-size: 3.0rem;
-	line-height: 1;
-	color: #aeaeae;
-
+#carrousel .owl-nav .owl-next::before {
+  content: "\f105";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "FontAwesome";
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1;
+  color: #aeaeae;
 }
 
-#carrousel .owl-nav .owl-prev:hover:before,
-#carrousel .owl-nav .owl-next:hover:before {
-	color: darken($red-color, 10%);
+#carrousel .owl-nav .owl-prev:hover::before,
+#carrousel .owl-nav .owl-next:hover::before {
+  color: darken($red-color, 10%);
 }
 
 /* Отзывы  */
 .inner-test {
-	text-align: center;
-	background-color: #fff;
+  border-left: 3px solid $red-color;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .inner-test img {
-	max-width: 128px;
-	margin: 0 auto 15px;
+  float: left;
+  margin: 10px 5px 30px 20px;
+  border-radius: 10em;
+  max-width: 160px;
+  max-height: 160px;
 }
 
 h3.city-name {
-	padding: 10px 0;
-	font-size: 14px;
-	font-size: .8em;
-	font-weight: 900;
-	line-height: 20px;
-	color: $red-color;
-	text-align: left;
-	margin-left: 30px;
+  margin-left: 30px;
+  padding: 10px 0;
+  font-weight: 900;
+  font-size: 0.8em;
+  line-height: 20px;
+  text-align: left;
+  color: $red-color;
 }
 
 p.text-testimonial {
-	padding: 10px 0 5px;
-	font-size: 16px;
-	letter-spacing: 1px;
-	line-height: 35px;
+  padding: 10px 0 5px;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: left;
+  color: darken(#eeeeee, 55%);
 }
 
 .block-items {
-	cursor: default;
+  cursor: default;
 }
 
-/*Стрелки*/
+/* Стрелки */
 .owl-my-nav {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-/*Изменяем внешний вид элементов управления (точки) */
+/* Изменяем внешний вид элементов управления (точки) */
 .owl-controls {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 12px;
-	height: 12px;
-	background-color: darken(#eee, 25%);
+  width: 12px;
+  height: 12px;
+  background-color: darken(#eeeeee, 25%);
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-	width: 12px;
-	height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 .owl-carousel .owl-dots .owl-dot.active span {
-	background-color: darken($red-color, 10%);
+  background-color: darken($red-color, 10%);
 }
 
 .owl-carousel .owl-dots .owl-dot:hover span {
-	background-color: darken($red-color, 20%);
+  background-color: darken($red-color, 20%);
 }
 
 /* картинки в качестве фона слайдера */
-.inner-test {
-	text-align: center;
-	background-color: #fff;
-	border-left: 3px solid $red-color;
-}
-
-.inner-test img {
-	max-width: 160px;
-	max-height: 160px;
-	float: left;
-	border-radius: 10em;
-	margin: 10px 5px 30px 20px;
-
-}
 
 .inner-test-cont {
-	margin-left: 220px;
-
-}
-
-p.text-testimonial {
-	text-align: left;
-	color: darken(#eee, 55%);
-
-	line-height: 2;
-
+  margin-left: 220px;
 }
 
 .text-testimonial i {
-	margin-right: 5px;
-	color: $red-color;
+  margin-right: 5px;
+  color: $red-color;
 }
 
-/*стили кнопки наверх*/
+/* стили кнопки наверх */
 .button-top {
-	position: fixed;
-	bottom: 20px;
-	right: -120px;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 50%;
-	background-color: $red-color;
-	cursor: pointer;
-	text-align: center;
-	opacity: .3;
-	z-index: 3;
-	transition: all 0.5s ease;
+  position: fixed;
+  right: -120px;
+  bottom: 20px;
+  z-index: 3;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $red-color;
+  opacity: 0.3;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .button-top .fa {
-	color: #fff;
-	font-size: 1.2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .button-top:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .button-top.active {
-	right: 30px;
+  right: 30px;
 }
 
 footer {
-	padding: 20px 0;
-	background-color: #333;
-	color: #eee;
+  padding: 20px 0;
+  color: #eeeeee;
+  background-color: #333333;
 }
 
 footer p {
-	text-align: center;
-	font-size: 15px;
-	line-height: 35px;
-	letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 /* стили формы обратной связи */
 
 .forms-call {
-	font-size: .875em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.875em;
 }
 
 .forma-header p {
-	font-size: 0.938em;
-	color: #666;
-	margin-top: 22px;
-	text-align: left;
+  margin-top: 22px;
+  font-size: 0.938em;
+  text-align: left;
+  color: #666666;
 }
 
-.forms-call label {
-	margin: 10px 0;
-	display: block;
+.first_label {
+  display: block;
+  margin: 10px 10% 10px 0;
+  width: 45%;
+}
+
+.first_label_last {
+  margin-right: 0;
+}
+
+.first_textarea {
+  width: 100%;
 }
 
 .forms-call input,
 .forms-call textarea {
-	display: block;
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	font-size: 0.938em;
-	border: none;
-	border-bottom: 1px solid red;
-	text-indent: 10px;
-	margin: 10px auto;
-	@include trans;
-	color: #364052;
-}
+  @include trans;
 
-.second_label {
-	padding-left: 10%;
-}
-
-.first_label {
-	padding-right: 10%;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  border-bottom: 1px solid #ff0000;
+  width: 100%;
+  height: 60px;
+  font-size: 0.938em;
+  line-height: 60px;
+  text-indent: 10px;
+  color: #364052;
 }
 
 .forms-call textarea {
-	height: 150px;
-	width: 100%;
-	resize: none;
-	overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  resize: none;
 }
 
 .forms-call input:focus,
 .forms-call textarea:focus {
-	color: darken(#364052, 10%);
+  color: darken(#364052, 10%);
 }
 
 .forms-calldecor input {
-	height: 40px;
-	line-height: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .forms-calldecor textarea {
-	height: 100px;
+  height: 100px;
 }
 
 .forms-calldecor .button-call .get-buttons {
-	margin-top: 10px;
-	line-height: 1;
+  margin-top: 10px;
+  line-height: 1;
 }
 
 .forms-call .get-buttons {
-	margin-top: 50px;
-	padding: 10px 50px;
-	/* 	line-height: 50px; */
-	font-size: 18px;
-	border: 1px solid $red-color;
-	text-decoration: none;
-	background-color: $red-color;
-	border-radius: 3px;
-	@include trans;
-	color: #fff;
+  @include trans;
+
+  margin-top: 30px;
+  border: 1px solid $red-color;
+  border-radius: 3px;
+  padding: 10px 50px;
+
+  /* 	line-height: 50px; */
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $red-color;
 }
 
 .button-call {
-	text-align: center;
-	margin: 0;
-	float: left;
+  float: left;
+  margin: 0;
+  text-align: center;
 }
 
 .forms-call .get-buttons:focus,
 .forms-call .get-buttons:hover,
 .forms-call .get-buttons:active {
-	background-color: transparent;
-	border: 1px solid $red-color;
-	color: $red-color;
+  border: 1px solid $red-color;
+  color: $red-color;
+  background-color: transparent;
 }
 
 /* конец формы обратной связи */
 
-/*оформление всплывающей формы а ниже и благодарности */
+/* оформление всплывающей формы а ниже и благодарности */
 .forms-calldecor {
-	max-width: 480px;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0.5);
-	transition: all 0.5s else;
-	overflow: hidden;
-	margin: auto;
-	border: 1px solid #fff;
-	border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid #ffffff;
+  border-radius: 1em;
+  max-width: 480px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s else;
 }
 
 .forms-calldecor h4,
 .forms-calldecor h5 {
-	color: #fff;
-	text-align: center;
-	font-size: 1.3em;
-	margin: 50px 20px 0;
+  margin: 50px 20px 0;
+  font-size: 1.3em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .forms-calldecor h5 {
-	margin-bottom: 30px;
-	margin-top: 10px;
-	font-size: 0.96em;
-	letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 0.96em;
+  letter-spacing: 1px;
 }
 
 .forms-calldecor input,
 .forms-calldecor textarea {
-	width: 90%;
-	color: lighten(#fff, 10%);
+  width: 90%;
+  color: lighten(#ffffff, 10%);
 }
 
 .forms-calldecor .button-call {
-	float: none;
-	text-align: center;
-	color: #fff;
-	margin-bottom: 40px;
+  float: none;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .forms-calldecor .mfp-close {
-	position: absolute;
-	right: 15px;
-	top: 15px;
-	border-radius: 3px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 3px;
 }
 
 .forms-calldecor .mfp-close-btn-in .mfp-close {
-	color: #fff;
-	font-size: 1.5em;
-	font-weight: bold;
-	border-radius: 3px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #ffffff;
 }
 
 .mfp-close-btn-in .mfp-close {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .forms-calldecor .success {
-	background-color: #000;
-	position: absolute;
-	z-index: 1;
-	left: 0;
-	top: -100%;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	opacity: 0;
-	padding-right: 20px;
-	padding-left: 20px;
-	transition: all 0.5s ease;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 1;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .forms-calldecor .success.active {
-	top: 0;
-	opacity: 1;
+  top: 0;
+  opacity: 1;
 }
 
 .forms-calldecor .success p {
-	text-transform: uppercase;
-	display: flex;
-	color: #fff;
-	font-size: 20px;
-	margin: auto;
-	text-align: center;
+  display: flex;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
-	opacity: 0;
-
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
+  opacity: 0;
 }
 
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	left: 100%;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+  left: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
-	left: 0;
+  left: 0;
+  opacity: 1;
 }
 
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-	left: 100%;
+  left: 100%;
+  opacity: 0;
+}
+
+.checkbox_box {
+  position: relative;
+  margin: 40px auto 10px;
+  padding: 0 0 0 30px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.checkbox_box .link_form {
+  position: relative;
+  top: -6px;
+  width: 87%;
+  font-size: 0.75rem;
+  color: #95989a;
+}
+
+.checkbox_box .link_form::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: -1px;
+  display: block;
+  border: 1px solid #ebebeb;
+  width: 15px;
+  height: 15px;
+  transition: 0.2s;
+}
+
+.checkbox_box .css-checkbox {
+  display: none;
+}
+
+.checkbox_box input:checked +.link_form::after {
+  content: "\2713";
+  position: absolute;
+  left: -23px;
+  top: -9px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  font-size: 22px;
+  color: #ff0000;
+}
+
+.form-callback_iner .checkbox_box input:checked +.link_form::after {
+  color: #ffffff;
+}
+
+.link_form a {
+  text-decoration: underline;
+  color: #95989a;
+  transition: 0.2s;
+}
+
+.form-callback_iner .link_form {
+  color: #ffffff;
 }
